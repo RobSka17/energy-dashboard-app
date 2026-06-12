@@ -2,3 +2,12 @@
     display: flex;
     height: 100%;
 }
+
+.DashboardNoDataMessage {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}

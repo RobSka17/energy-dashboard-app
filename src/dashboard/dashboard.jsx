@@ -40,6 +40,15 @@ export const Dashboard = () => {
             Something went wrong!
         </>
     )
+    
+    if(state.sectors.length < 1) return (
+        <>
+            <div className={'DashboardNoDataMessage'}>
+                <span>Hmm... There doesn't seem to be any data to display.</span>
+                <span>There may be a problem connecting to the API</span>
+            </div>
+        </>
+    )
 
     return (
         <>
