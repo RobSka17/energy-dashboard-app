@@ -1,16 +1,11 @@
-# React + Vite
+# Energy Dashboard App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple dashboard app designed to demo basic functionality of a React client app which presents the user with data fetched from an accompanying API.
 
-Currently, two official plugins are available:
+## Running the app
+Go to the app directory and run the following to start app using the Vite dev server:
+`npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## API
+See here for the ASP.NET Core web API project: https://github.com/RobSka17/EnergyDashboardAPI
+This is will need to be run on the same machine as the client app
