@@ -1,0 +1,33 @@
+@keyframes ChartCardFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ChartCard {
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    width: 250px;
+    height: auto;
+    margin: 1.25rem;
+    animation-name: ChartCardFadeIn;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.ChartCardHeading {
+    display: flex;
+    padding: 0.5rem 0.65rem;
+    background-color: #1672c9c2;
+    border-radius: 8px 8px 0 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.ChartCardBody {
+    padding: 0.95rem;
+}

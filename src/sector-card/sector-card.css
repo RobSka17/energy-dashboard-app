@@ -1,0 +1,43 @@
+@keyframes SectorCardFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.SectorCard {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    margin: 1.25rem;
+    max-width: 14rem;
+    animation-name: SectorCardFadeIn;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.SectorCardHeading {
+    display: flex;
+    padding: 0.5rem 0.65rem;
+    background-color: #1672c9c2;
+    border-radius: 8px 8px 0 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.SectorCardEnergySourceList {
+    display: flex;
+    flex-direction: column;
+    padding: 0.65rem 0.6rem;
+}
+
+.SectorCardEnergySource {
+    padding: 0.5rem 0.35rem;
+    margin: 0.25rem 0rem;
+    color: #e2e2e2;
+}

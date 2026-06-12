@@ -1,0 +1,23 @@
+import { UseDashboardContext } from '../dashboard/dashboard'
+import { SectorCard } from '../sector-card/sector-card'
+import { EnergyOverviewChartCard } from '../energy-overview-chart-card/energy-overview-chart-card'
+import './sector-card-list.css'
+
+export const SectorCardList = () => {
+    const {
+        sectors
+    } = UseDashboardContext()
+
+    return (
+        <>
+            <div className={'SectorCardList'}>
+                <EnergyOverviewChartCard />
+                {
+                    sectors.map(s =>
+                        <SectorCard key={`sector-card-${s.Name}`} props={{sector: s}} />
+                    )
+                }
+            </div>
+        </>
+    )
+}
