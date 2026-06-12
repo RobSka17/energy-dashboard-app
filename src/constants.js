@@ -1,11 +1,18 @@
 export const ReducerKeys = {
     DashboardKeys: {
-        UpdateDashboard: 'UPDATE_DASHBOARD'
+        UpdateDashboard: 'UPDATE_DASHBOARD',
+        UpdateDashboardView: 'UPDATE_DASHBOARD_VIEW'
     }
 }
 
+export const DashboardViews = {
+    AllSectors: 'ALL_SECTORS',
+    SectorFocus: 'SECTOR_FOCUS'
+}
+
 export const Endpoints = {
-    GetSectors: 'http://localhost:5204/sectors'
+    GetSectors: 'http://localhost:5204/sectors',
+    GetSector: 'http://localhost:5204/sector'
 }
 
 export const EnergySourceNames = {

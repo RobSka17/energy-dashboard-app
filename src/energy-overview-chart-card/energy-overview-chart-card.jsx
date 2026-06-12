@@ -7,8 +7,31 @@ ChartJS.register(ArcElement, Tooltip)
 
 export const EnergyOverviewChartCard = () => {
     const {
-        sectors
+        sectors,
+        focusedSector
     } = UseDashboardContext()
+
+    const buildData = () => {
+        if(focusedSector) return buildDataFromSector()
+        return buildDataFromSectors()
+    }
+
+    const buildDataFromSector = () => {
+        const energySourceNames = focusedSector.EnergySources.map(e => e.Name)
+        const energySourceAmounts = focusedSector.EnergySources.map(e => e.Amount)
+        return {
+            labels: energySourceNames,
+            datasets: [
+                {
+                    data: energySourceAmounts,
+                    backgroundColor: energySourceNames.map(e => EnergySourceColours[e]),
+                    borderColor: energySourceNames.map(e => EnergySourceBorderColours[e]),
+                    borderWidth: 1,
+                    hoverOffset: 4
+                }
+            ]
+        }
+    }
 
     const buildDataFromSectors = () => {
         const allEnergySources = sectors.map(s =>
@@ -41,7 +64,7 @@ export const EnergyOverviewChartCard = () => {
         }
     }
 
-    const data = buildDataFromSectors()
+    const data = buildData()
 
     return (
         <>

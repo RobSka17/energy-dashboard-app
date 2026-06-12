@@ -8,11 +8,13 @@
 }
 
 .ChartCard {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    height: 20rem;
     border-radius: 8px;
     background-color: #2e2e2e;
     color: #ffffff;
-    width: 250px;
-    height: auto;
     margin: 1.25rem;
     animation-name: ChartCardFadeIn;
     animation-duration: 0.6s;
