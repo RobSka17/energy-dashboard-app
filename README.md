@@ -8,4 +8,4 @@ Go to the app directory and run the following to start app using the Vite dev se
 
 ## API
 See here for the ASP.NET Core web API project: https://github.com/RobSka17/EnergyDashboardAPI
-This is will need to be run on the same machine as the client app
+This will need to be run on the same machine as the client app
